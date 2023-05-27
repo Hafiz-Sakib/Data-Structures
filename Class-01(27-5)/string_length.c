@@ -9,5 +9,6 @@ int main()
     {
         size++;
     }
-    printf("%d", size) return 0;
+    printf("%d", size);
+    return 0;
 }
