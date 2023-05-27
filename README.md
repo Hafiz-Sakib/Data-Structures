@@ -5,5 +5,5 @@
 ### Course Instructor : Adiba Ibnat Chowdhury
 
 <p align="center"> 
-<img height="100%" width="100%" src="https://ict.iitk.ac.in/wp-content/uploads/Data-Structure-through-C-2.jpg">
+<img height="80%" width="80%" src="https://ict.iitk.ac.in/wp-content/uploads/Data-Structure-through-C-2.jpg">
 </p>
