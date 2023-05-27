@@ -1,20 +1,21 @@
 #include <stdio.h>
-#include <math.h>
-#include <conio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <ctype.h>
-#include <float.h>
-#include <limits.h>
-#include <time.h>
-#define ll long long
-#define scan(data) scanf("%d", &data)
-#define print(data) printf("%d\n", data)
-#define fscan(data) scanf("%f", &data)
-#define fprint(data) printf("%.2f\n", data)
 
 int main()
 {
+    int n;
+    scanf("%d", &n);
+    int a[n];
+    for (int i = 0; i < n; i++)
+    {
+        if (a[i] % 2 == 0)
+        {
+            printf("Even Number");
+        }
+        else
+        {
+            printf("Odd Number");
+        }
+    }
 
     return 0;
 }
