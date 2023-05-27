@@ -1,4 +1,4 @@
-# Data Structure
+# Data Structure (CSE-222) Course
 
 ## Premier University,Chittagong
 
