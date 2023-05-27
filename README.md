@@ -1,9 +1,9 @@
 # <h1 align="center"> Data Structure <h1>
 
-## <h1 align="center"> Premier University,Chittagong <h1>
+## Premier University,Chittagong
 
-### <h1 align="center"> Course Instructor : Adiba Ibnat Chowdhury <h1>
+### Course Instructor : Adiba Ibnat Chowdhury
 
 <p align="center"> 
-<img height="100%" width="100%" src="https://i.postimg.cc/T1ncDSkL/Data-Structures-with-C-Programming.png">
+<img height="100%" width="100%" src="https://postimg.cc/zHXWmdY8">
 </p>
