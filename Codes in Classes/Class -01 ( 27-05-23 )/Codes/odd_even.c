@@ -2,6 +2,7 @@
 
 int main()
 {
+    // Find Odd and Even Numbers From an Array
     int n;
     scanf("%d", &n);
     int a[n];

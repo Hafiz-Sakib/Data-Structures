@@ -2,6 +2,7 @@
 
 int main()
 {
+    // Find String Length Without Library Function
     char s[1000];
     gets(s);
     int size = 0;
