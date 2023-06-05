@@ -1,19 +1,18 @@
-#include <bits/stdc++.h>
-using namespace std;
+#include <stdio.h>
 
 int main()
 {
     int n, ans = -1;
-    cin >> n;
+    scanf("%d", &n);
     int a[n];
     for (int i = 0; i < n; i++)
     {
-        cin >> a[i];
+        scanf("%d", &a[i]);
     }
 
-    cout << "Enter The Number You Want to Find in The Array : " << endl;
+    printf("Enter the number you want to find in the array: ");
     int q;
-    cin >> q;
+    scanf("%d", &q);
 
     int first = 0;
     int last = n - 1;
@@ -35,13 +34,14 @@ int main()
             last = mid - 1;
         }
     }
+
     if (ans == -1)
     {
-        cout << "The number is not present in the array." << endl;
+        printf("The number is not present in the array.\n");
     }
     else
     {
-        cout << "The number is found at position " << ans + 1 << " in the array." << endl;
+        printf("The number is found at position %d in the array.\n", ans + 1);
     }
 
     return 0;
