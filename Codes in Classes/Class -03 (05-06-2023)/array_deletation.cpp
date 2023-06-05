@@ -15,10 +15,11 @@ int main()
     cin >> k;
 
     int j = k;
-    for (int i = k; i <= n - 1; i++)
+    for (int i = k; i <= (n - 1); i++)
     {
         a[i] = a[i + 1];
     }
+    n--;
 
     cout << "After Deletation Your Array Is : " << endl;
 
