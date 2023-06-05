@@ -26,6 +26,7 @@ int main()
     n++;
 
     printf("After insertion, your array is:\n");
+
     for (int i = 0; i < n; i++)
     {
         printf("%d ", a[i]);
