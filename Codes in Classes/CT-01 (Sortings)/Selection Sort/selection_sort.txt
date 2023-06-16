@@ -1,0 +1,9 @@
+Selection sort works by dividing the array into two parts: a sorted part and an unsorted part. Initially, the sorted part is empty, and the unsorted part contains all the elements.
+
+The algorithm repeatedly finds the smallest element from the unsorted part and moves it to the sorted part. This process is repeated until the entire array is sorted.
+
+To do this, the algorithm iterates through the unsorted part of the array and finds the smallest element. It then swaps this smallest element with the first element of the unsorted part, effectively moving it to the sorted part of the array.
+
+By doing this repeatedly, the smallest element of the remaining unsorted part is continuously selected and moved to its correct position in the sorted part. This gradually builds up the sorted portion of the array until the entire array becomes sorted.
+
+The selection sort algorithm does not require any extra space and operates in-place on the given array. However, it is not the most efficient sorting algorithm for large arrays, as its time complexity is O(n^2), where n is the number of elements in the array.
