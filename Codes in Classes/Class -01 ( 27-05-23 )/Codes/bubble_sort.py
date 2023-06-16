@@ -1,4 +1,4 @@
-# Sort an Array in Ascending Order (Bubble Sort)
+# Bubble Sort 
 n = int(input())
 a = list(map(int, input().split()))
 
