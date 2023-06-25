@@ -1,5 +1,6 @@
-#include <iostream>
+//  Stack Implementation With Pointer
 
+#include <iostream>
 using namespace std;
 
 struct Node
