@@ -1,4 +1,3 @@
-# Insertion Sort 
 n = int(input())
 a = list(map(int, input().split()))
 
@@ -13,4 +12,3 @@ for i in range(1, n):
 for i in range(n):
     print(a[i], end=" ")
 
-print()
