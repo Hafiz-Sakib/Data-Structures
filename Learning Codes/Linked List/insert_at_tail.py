@@ -7,11 +7,12 @@ def insert_at_tail(head, val):
     n = Node(val)
     if head is None:
         head = n
-        return
+        return head
     tmp = head
     while tmp.next is not None:
         tmp = tmp.next
     tmp.next = n
+    return head
 
 def display(head):
     tmp = head
@@ -20,10 +21,9 @@ def display(head):
         tmp = tmp.next
     print()
 
-if __name__ == "__main__":
-    head = None
-    insert_at_tail(head, 1)
-    insert_at_tail(head, 10)
-    insert_at_tail(head, 100)
-    insert_at_tail(head, 1000)
-    display(head)
+head = None
+head = insert_at_tail(head, 1)
+head = insert_at_tail(head, 10)
+head = insert_at_tail(head, 100)
+head = insert_at_tail(head, 1000)
+display(head)
