@@ -35,10 +35,10 @@ void display(node *head)
     node *tmp = head; // হেড এর মেমোরি এড্রেস হোল্ড করতেসে
     while (tmp != NULL)
     {
-        cout << tmp->data << " -> ";
+        cout << tmp->data << " --> ";
         tmp = tmp->next;
     }
-    cout << endl;
+    cout << "NULL" << endl;
 }
 
 int main()
