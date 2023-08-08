@@ -17,6 +17,7 @@ public:
 void insert_at_tail(node *&head, int val)
 {
     node *n = new node(val);
+    //  the line node *n = new node(val); is creating a new node object on the heap, initializing its data member with the provided value (val), and then storing the memory address of this newly created object in the pointer variable n.
     if (head == NULL)
     {
         head = n;
