@@ -97,79 +97,90 @@ int main()
         switch (x)
         {
         case 1:
+        {
             creation = 1;
-            cout << "Linked List Created.."
-                 << "\n\n";
+            cout << "Linked List Created.." << endl;
             break;
+        }
         case 2:
+        {
             if (!creation)
             {
-                cout << "Linked List is not created..."
-                     << "\n\n";
+                cout << "Linked List is not created..." << endl;
                 continue;
             }
             cout << "Enter a Value : ";
             cin >> ele;
             head = insert_bg(head, ele);
             break;
+        }
         case 3:
+        {
             if (!creation)
             {
-                cout << "Linked List is not created..."
-                     << "\n\n";
+                cout << "Linked List is not created..." << endl;
                 continue;
             }
             cout << "Enter a Value : ";
             cin >> ele;
             insert_end(head, ele);
             break;
+        }
         case 4:
+        {
             if (!creation)
             {
-                cout << "Linked List is not created..."
-                     << "\n\n";
+                cout << "Linked List is not created..." << endl;
                 continue;
             }
             head = delete_bg(head);
             break;
+        }
         case 5:
+        {
             if (!creation)
             {
-                cout << "Linked List is not created..."
-                     << "\n\n";
+                cout << "Linked List is not created..." << endl;
                 continue;
             }
             delete_end(head);
             break;
+        }
         case 6:
+        {
             if (!creation)
             {
-                cout << "Linked List is not created..."
-                     << "\n\n";
+                cout << "Linked List is not created..." << endl;
                 continue;
             }
             cout << "Enter a Element : ";
             cin >> ele;
             y = search(head, ele);
             if (y == 1)
-                cout << "Element Present"
-                     << "\n\n";
+            {
+                cout << "Element Present" << endl;
+            }
             else if (y == 0)
-                cout << "Element Not Present"
-                     << "\n\n";
+            {
+                cout << "Element Not Present" << endl;
+            }
             break;
+        }
         case 7:
+        {
             if (!creation)
             {
-                cout << "Linked List is not created..."
-                     << "\n\n";
+                cout << "Linked List is not created..." << endl;
                 continue;
             }
             Display(head);
             break;
+        }
         case 8:
+        {
             exit(0);
             break;
+        }
         }
     }
     return 0;
