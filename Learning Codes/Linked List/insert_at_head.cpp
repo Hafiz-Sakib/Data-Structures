@@ -20,21 +20,6 @@ void insert_at_head(node *&head, int val)
     n->next = head;
     head = n;
 }
-void insert_at_tail(node *&head, int val)
-{
-    node *n = new node(val);
-    if (head == NULL)
-    {
-        head = n;
-        return;
-    }
-    node *tmp = head;
-    while (tmp->next != NULL)
-    {
-        tmp = tmp->next;
-    }
-    tmp->next = n;
-}
 void display(node *head)
 {
     node *tmp = head;
@@ -49,12 +34,10 @@ void display(node *head)
 int main()
 {
     node *head = NULL;
-    insert_at_tail(head, 1);
-    insert_at_tail(head, 10);
-    insert_at_tail(head, 100);
-    insert_at_tail(head, 1000);
     display(head);
     insert_at_head(head, 2);
+    insert_at_head(head, 20);
+    insert_at_head(head, 200);
     display(head);
     return 0;
 }
