@@ -17,9 +17,9 @@ def insert_at_tail(head, val):
 def display(head):
     tmp = head
     while tmp is not None:
-        print(tmp.data, "->", end=" ")
+        print(tmp.data, "-->", end=" ")
         tmp = tmp.next
-    print()
+    print("NULL",end="")
 
 head = None
 head = insert_at_tail(head, 1)
