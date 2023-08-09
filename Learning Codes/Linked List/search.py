@@ -1,10 +1,11 @@
 class Node:
-    def __init__(self, val):
+    def linked_list(self, val):
         self.data = val
         self.next = None
 
 def insert_at_tail(head, val):
-    n = Node(val)
+    n = Node()
+    n.linked_list(val)
     if head is None:
         head = n
         return head
@@ -29,17 +30,15 @@ def display(head):
         tmp = tmp.next
     print("NULL")
 
-
 head = None
 head = insert_at_tail(head, 1)
 head = insert_at_tail(head, 10)
 head = insert_at_tail(head, 100)
 head = insert_at_tail(head, 1000)
 display(head)
-    
-found = search(head, 1100)
 
+found = search(head, 1100)
 if found:
-        print("Founded")
+    print("Found")
 else:
-        print("Not Founded")
+    print("Not Found")
