@@ -1,10 +1,11 @@
 class Node:
-    def __init__(self, val):
+    def linked_list(self, val):
         self.data = val
         self.next = None
 
 def insert_at_tail(head, val):
-    n = Node(val)
+    n = Node()
+    n.linked_list(val)
     if head is None:
         head = n
         return head
