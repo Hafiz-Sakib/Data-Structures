@@ -40,7 +40,29 @@ void display(node *head)
     }
     cout << "NULL" << endl;
 }
+void insert_at_position(node *&head, int val, int position)
+{
+    if (position == 0 || head == NULL)
+    {
+        node *n = new node(val);
+        n->next = head;
+        head = n;
+        return;
+    }
 
+    node *n = new node(val);
+    node *tmp = head;
+    int i = 0;
+
+    while (i < position - 1 && tmp->next != NULL)
+    {
+        tmp = tmp->next;
+        i++;
+    }
+
+    n->next = tmp->next;
+    tmp->next = n;
+}
 int main()
 {
     node *head = NULL;
