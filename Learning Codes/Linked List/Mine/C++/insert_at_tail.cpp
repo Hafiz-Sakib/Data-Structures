@@ -33,7 +33,7 @@ void insert_at_tail(node *&head, int val)
 
 void display(node *head)
 {
-    node *tmp = head; // হেড এর মেমোরি এড্রেস হোল্ড করতেসে
+    node *tmp = head;
     while (tmp != NULL)
     {
         cout << tmp->data << " --> ";
