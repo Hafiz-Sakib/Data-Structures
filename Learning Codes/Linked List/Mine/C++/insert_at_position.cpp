@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 class node
 {
 public:
@@ -31,7 +32,7 @@ void insert_at_tail(node *&head, int val)
 
 void insert_at_position(node *&head, int val, int position)
 {
-    if (position == 0 || head == NULL)
+    if (position == 1 || head == NULL)
     {
         node *n = new node(val);
         n->next = head;
@@ -41,7 +42,7 @@ void insert_at_position(node *&head, int val, int position)
 
     node *n = new node(val);
     node *tmp = head;
-    int i = 0;
+    int i = 1;
 
     while (i < position - 1 && tmp->next != NULL)
     {
