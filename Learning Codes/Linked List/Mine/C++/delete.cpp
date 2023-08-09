@@ -90,5 +90,8 @@ int main()
     insert_at_tail(head, 1000);
     display(head);
 
+    delete_at_position(head, 4);
+    display(head);
+
     return 0;
 }
