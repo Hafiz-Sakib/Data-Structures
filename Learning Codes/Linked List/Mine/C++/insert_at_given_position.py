@@ -17,7 +17,7 @@ def insert_at_tail(head, val):
 
 def insert_at_position(head, val, position):
     if position == 1 or head is None:
-        n = Node(val)
+        n = Node()
         n.linked_list(val)
         n.next = head
         head = n
