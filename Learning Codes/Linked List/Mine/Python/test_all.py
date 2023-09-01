@@ -1,5 +1,5 @@
 class Node:
-    def __init__(self, value):
+    def lined_list(self, value):
         self.data = value
         self.next = None
 
@@ -8,7 +8,7 @@ class LinkedList:
         self.head = None
     
     def insetAtHead(self, value):
-        newNode = Node(value)
+        newNode = Node()
         newNode.next = self.head
         self.head = newNode
 
