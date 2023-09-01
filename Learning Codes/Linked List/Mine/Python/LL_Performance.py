@@ -1,5 +1,5 @@
 class Node:
-    def linked_list(self, value):
+    def __init__(self, value):
         self.data = value
         self.next = None
 
@@ -7,7 +7,7 @@ class LinkedList:
     def __init__(self):
         self.head = None
     
-    def insetAtHead(self, value):
+    def insertAtHead(self, value):
         newNode = Node(value)
         newNode.next = self.head
         self.head = newNode
@@ -24,15 +24,9 @@ class LinkedList:
             current = current.next
         current.next = newNode
 
-
-
     def insertAtAnyPos(self, pos, value):
         newNode = Node(value)
 
-        if self.head == None:
-            self.head = newNode
-            return
-        
         if pos == 1:
             newNode.next = self.head
             self.head = newNode
@@ -40,17 +34,22 @@ class LinkedList:
         
         current = self.head
         for i in range(pos - 2):
+            if current is None:
+                print("Invalid position")
+                return
             current = current.next
-        newNode.next = current.next
-        current.next = newNode
-
+        if current is None:
+            print("Invalid position")
+        else:
+            newNode.next = current.next
+            current.next = newNode
 
     def search(self, key):
         pos = 1
         current = self.head
-        while current.next:
+        while current:
             if current.data == key:
-                print("Founded, position No: ", pos)
+                print("Found, position No:", pos)
                 return
             current = current.next
             pos += 1
@@ -63,11 +62,12 @@ class LinkedList:
             current = current.next
         print("None")
 
-
-
+# Create a LinkedList instance
 list = LinkedList()
-list.insetAtHead(5)
-list.insetAtHead(7)
+
+# Insert elements into the LinkedList
+list.insertAtHead(5)
+list.insertAtHead(7)
 list.display()
 list.insertAtTail(1)
 list.insertAtTail(2)
@@ -76,6 +76,9 @@ list.insertAtAnyPos(3, 8)
 list.insertAtAnyPos(1, 9)
 list.insertAtAnyPos(7, 4)
 list.display()
-list.search(3)
-list.display()
 
+# Search for an element in the LinkedList
+list.search(3)
+
+# Display the LinkedList again
+list.display()
