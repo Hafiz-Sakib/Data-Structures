@@ -11,10 +11,6 @@ class LinkedList:
         newNode = Node(value)
         newNode.next = self.head
         self.head = newNode
-
-    def deleteFromHead(self):
-        if self.head:
-            self.head = self.head.next
     
     def insertAtTail(self, value):
         newNode = Node(value)
@@ -28,11 +24,6 @@ class LinkedList:
             current = current.next
         current.next = newNode
 
-    def deleteFromTail(self):
-        current = self.head
-        while current.next.next:
-            current = current.next
-        current.next = None
 
     def insertAtAnyPos(self, pos, value):
         newNode = Node(value)
@@ -51,14 +42,7 @@ class LinkedList:
             current = current.next
         newNode.next = current.next
         current.next = newNode
-    
-    def deleteFromAnyPos(self, pos):
-        current = self.head
-        if pos == 1:
-            self.head = self.head.next
-        for i in range(pos - 2):
-            current = current.next
-        current.next = current.next.next
+
 
     def search(self, key):
         pos = 1
