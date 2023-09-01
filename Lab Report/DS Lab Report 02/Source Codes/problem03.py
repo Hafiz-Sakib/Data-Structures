@@ -2,7 +2,6 @@ class Node:
     def __init__(self, value):
         self.data = value
         self.next = None
-
 class LinkedList:
     def __init__(self):
         self.head = None
@@ -25,17 +24,12 @@ class LinkedList:
         newNode.next = current.next
         current.next = newNode
 
-
-
-
     def display(self):
         current = self.head
         while current:
             print(current.data, end=" -> ")
             current = current.next
         print("None")
-
-
 
 list = LinkedList()
 list.insertAtAnyPos(3, 25)
