@@ -27,8 +27,6 @@ class LinkedList:
             current = current.next
         print("None")
 
-
-
 list = LinkedList()
 list.insertAtTail(99)
 list.insertAtTail(100)
