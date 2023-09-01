@@ -10,11 +10,11 @@ def postfix(expression):
 
             if char == '+':
                 result = oparand1 + oparand2
-            if char == '-':
+            elif char == '-':
                 result = oparand1 - oparand2
-            if char == '*':
+            elif char == '*':
                 result = oparand1 * oparand2
-            if char == '/':
+            elif char == '/':
                 result = oparand1 / oparand2
 
             stack.append(result)
