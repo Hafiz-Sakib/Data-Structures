@@ -21,7 +21,5 @@ def postfix(expression):
         
     return stack[0]
 
-
-
 result = postfix('23*45+*')
 print(result)
