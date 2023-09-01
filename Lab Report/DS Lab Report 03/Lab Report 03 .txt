@@ -1,0 +1,10 @@
+Lab Report 03 : 
+
+Problem 01 : The Problem Stated On Online Class (01.09.2023)
+
+Criteria : 
+	* Problem Statement
+	* Objective 
+	* Source Code and Input/Output
+	* Description
+	* Combined Discussion
